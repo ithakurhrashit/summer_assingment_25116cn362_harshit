@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std ;
+int main(){
+    // PROGRAM TO CALCULATE SUM OF DIGITS OF A NUMBER.
+    int n , sum=0 ,r , y , lastdigit ;
+    cout << "enter the number ";
+    cin >> n ;
+    if(n<0){
+        n= -n; 
+    }
+    y=n ;
+    while(n>0){
+        lastdigit =n%10;
+        sum= sum+lastdigit;
+        n=n/10;
+    }
+    cout << " the sum of digits of given number is :" << sum<< endl ;
+}
