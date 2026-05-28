@@ -1,0 +1,24 @@
+// find the nth fibonnaci term 
+#include<iostream>
+using namespace std ;
+int main (){
+    int a=0,b=1,n,c,temp;
+       cout << " give the term you want to  ";
+       cin >> n ;
+       if(n==1){
+        cout << " the term is 0";
+       }
+       if (n==2){
+        cout << " your term is 1";
+       }
+       for(int i =1;i<=n-2;i++){
+        c=a+b;
+        a=b;
+        b=c;
+
+
+}
+if(n>2){
+    cout <<"your  term is :" << c;
+}
+}
