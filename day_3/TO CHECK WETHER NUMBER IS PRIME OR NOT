@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std ;
+int main(){
+    // to determine wether the number is prime or not 
+    int n , i , prime=-1;
+    cout << "input the number you wanna check ";
+    cin >> n;
+    for(i=2;i<=n/2;i++){
+        if(n%i==0){
+            prime=1;
+        }
+    }
+    if(prime==1){
+        cout<<"the number is not prime";
+    }
+    else {
+        cout<< " the number is prime";
+    }
+
+
+}
