@@ -1,0 +1,14 @@
+// wap to find x^n withoput using pow function ;
+#include<iostream>
+using namespace std ;
+int main (){
+    int n , p,answer=1;
+    cout << " enter the number";
+    cin >> n;
+    cout << " enter the power ";
+    cin >> p ;
+    for(int i =1;i<=p;i++){
+        answer=answer*n;
+    }
+    cout << " the answer is :"<< answer ;
+}
