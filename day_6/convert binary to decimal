@@ -1,0 +1,15 @@
+// to convert binary to decimal
+#include<iostream>
+using namespace std ;
+int main(){
+  int binarynum,decimalnum=0,placevalue=1;
+  cout<<"enter the binary num";
+  cin>> binarynum;
+  while(binarynum>0){
+    int remainder= binarynum%10;
+    decimalnum=decimalnum+(remainder*placevalue);
+    placevalue=placevalue*2;
+    binarynum=binarynum/10;
+  }
+  cout<<"decimalnum of following binary is :"<< decimalnum;
+}
