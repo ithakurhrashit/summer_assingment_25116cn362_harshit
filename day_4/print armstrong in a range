@@ -1,0 +1,36 @@
+// to generate armstrong number in a range 
+#include<iostream>
+#include<math.h>
+using namespace std ;
+int main(){
+  int startrange , endrange ;
+  cout << " enter the starting number ";
+  cin >> startrange ;
+  cout << " enter the ending number ";
+  cin >> endrange ;
+  cout << " armstrong numbers between "<< startrange << ":"<< endrange ;
+  for(int i=startrange;i<=endrange;i++){
+    int currentnum =i;
+    int sum=0;
+    int digits =0;
+    // firstly we will count the number of digits 
+    int count =0;
+    while(i!=0){
+      count ++;
+      i=i/10;
+
+    }
+    digits=count ;
+    i=currentnum;
+    while(i>0){
+      int remainder;
+      sum=sum+pow(remainder,digits);
+      i=i/10;
+    }
+      if(sum==currentnum){
+        cout << currentnum;
+      }
+      
+  }
+
+}
