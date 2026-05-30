@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std ;
+int main (){
+int decimalnum , binarynum=0,placevalue=1;
+cout << "enter a decimal num" ;
+cin >> decimalnum ;
+if(decimalnum==0){
+cout<< " binarynum=0";
+}
+while(decimalnum>0){
+int remainder =decimalnum%2;
+binarynum=binarynum+(remainder*placevalue);
+placevalue=placevalue*10;
+decimalnum=decimalnum/2;
+
+}
+cout<< " binary equivalent " << binarynum ;
+}
