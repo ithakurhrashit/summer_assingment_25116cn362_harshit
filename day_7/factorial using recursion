@@ -1,0 +1,20 @@
+// factorial using recursion 
+#include<iostream>
+using namespace std ;
+int fact(int m)
+int main(){
+    int n ,f;
+    cout << " enter the number whose factorial you want";
+    cin >> n ;
+    f=fact(n);
+    cout << "factorial is :" << f ;
+
+}
+int fact(int m){
+    if(m==0){
+        return 1;
+    }
+    else{
+        return(m*fact(m-1));
+    }
+}
