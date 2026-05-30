@@ -1,0 +1,15 @@
+// to count set bits in a number 
+#include<iostream>
+using namespace std ;
+int main(){
+int decimalnum;
+int setbits=0;
+cout<<"enter decimal num:";
+cin >> decimalnum;
+int temp=decimalnum;
+while(temp>0){
+  temp=temp&(temp-1);
+  setbits++;
+}
+cout<<"the number of set bits is :" << setbits ;
+}
