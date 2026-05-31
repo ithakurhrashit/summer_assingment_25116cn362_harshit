@@ -1,0 +1,18 @@
+// recursive sum of digits 
+#include<iostream>
+using namespace std ;
+int sum(int m ){
+    if(m<=9){
+        return m;
+    }
+    if(m>=10){
+        return m%10+sum(m/10);
+    }
+}
+int main(){
+    int n ;
+    cout << " enter thye number whose sum you want to find";
+    cin >> n;
+    cout << " sum of digits is :" << sum(n);
+
+}
