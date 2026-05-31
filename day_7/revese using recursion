@@ -1,0 +1,18 @@
+// recursive reverse a number 
+#include<iostream>
+using namespace std ;
+int reverse (int m){
+    if(m>=9){
+        return m;
+    }
+    if(m<=10){
+        return (m/10)+10*reverse(m%10);
+    }
+}
+int main (){
+    int n ;
+    cout << " enter the number you want to reverse ";
+    cin >> n ;
+    cout << " the reverse is :" << reverse(n);
+
+}
