@@ -1,0 +1,21 @@
+// program function to find factorial 
+#include<iostream>
+using namespace std ;
+int factorial(int m){
+    if(m==1){
+        return 1 ;
+    }
+    if(m==0){
+        return 1 ;
+    }
+    if(m>1){
+        return m*factorial(m-1);
+    }
+}
+int main (){
+    int n ;
+    cout << "enter the number whose factorial you want to find";
+    cin >> n ;
+    cout << " factorial is :" << factorial(n);
+
+}
