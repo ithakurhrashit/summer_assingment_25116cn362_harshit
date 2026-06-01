@@ -1,0 +1,15 @@
+// function to find sum of two numbers ;
+#include<iostream>
+using namespace std;
+int sum(int a , int b ){
+    return a+b ;
+}
+ int main(){
+    int m,n ;
+    cout << " enter the first number";
+    cin >> m;
+    cout << " enter the second number";
+    cin >> n ;
+    cout << "sum of numbers " << sum(m,n) ;
+
+}
