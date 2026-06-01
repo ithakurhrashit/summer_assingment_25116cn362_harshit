@@ -1,0 +1,30 @@
+// program to check number is prime or not
+#include<iostream>
+using namespace std ;
+bool iSprime(int a){
+    if(a<=1){
+        return false ;
+    }
+    else{
+        for(int i=2;i<a/2;i++){
+            if(a%i==0){
+                return false ;
+            }
+            else{
+                return true ;
+            }
+        }
+    }
+}
+int main (){
+    int m ;
+    cout << " enter the number you wanna check";
+    cin >> m ;
+    if(iSprime(m)){
+        cout << "the number is prime";
+    }
+    else{
+        cout << "number is not  prime";
+    }
+
+}
