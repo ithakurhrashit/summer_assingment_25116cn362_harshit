@@ -1,0 +1,30 @@
+// function for palindrome
+#include<iostream>
+using namespace std ;
+bool palindrome(int a){
+    int b;
+    int n=0  ;
+    b=a;
+    while(a!=0){
+        int remainder =a%10;
+         n=n*10+remainder;
+         a=a/10;
+    }
+    if(n==b){
+        return true ;
+    }
+    else{
+        return false ;
+    }
+}
+int main(){
+int m ;
+cout << "enter the number you wanna check";
+cin >> m;
+if(palindrome(m)){
+    cout << "number is palindrome";
+}
+else{
+    cout << " the number is not palindrome0";
+}
+} 
