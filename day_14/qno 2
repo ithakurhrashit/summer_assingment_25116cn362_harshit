@@ -1,0 +1,25 @@
+// to find freq of element 
+#include<iostream>
+using namespace std ;
+int main(){
+    int n,a[3][3],freq=0;
+    cout << "enter the element whose frequency we have to find";
+    cin >> n;
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            cout <<"enter the" << i << j << "element of array";
+            cin >> a[i][j];
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            if(a[i][j]==n){
+                freq++;
+            }
+        }
+        
+    }
+    cout << "the frequency of"<< n << " element is "<< freq ;
+        
+    
+}
