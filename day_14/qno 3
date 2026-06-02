@@ -1,0 +1,25 @@
+// to  find the  second largest element 
+#include<iostream>
+using namespace std ;
+int main(){
+    int n , temp ;
+    cout << "enter the length of array";
+    cin >> n ;
+    int a[n];
+    cout << " enter the elements of array ";
+    for(int i=0;i<n;i++){
+        cin >> a[i];
+    }
+    // first we will sort the arrray before use
+    for(int i=0 ;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            if(a[j]>a[j+1]){
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp ;
+            }
+        }
+    }
+    // now array is sorted in increasing order to if we acess the ssecond last element we can acess the seconmd largest element 
+    cout << " second largest element is : "<< a[n-2];
+}
