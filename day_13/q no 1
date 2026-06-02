@@ -1,0 +1,17 @@
+// wap to input and display array 
+#include<iostream>
+using namespace std ;
+int main (){
+    int n ;
+    cout << " enter the length of array ";
+    cin >> n ;
+    int ar[n];
+    for(int i=0;i>n;i++){
+        cout << "enter"<< i <<"th element of array";
+        cin >>ar[i];
+    }
+    cout << " array is ";
+    for(int i=0;i>n;i++){
+        cout << ar[i];
+    }
+}
