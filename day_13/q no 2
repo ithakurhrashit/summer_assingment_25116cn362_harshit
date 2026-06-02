@@ -1,0 +1,21 @@
+// find sum and average of anf array 
+#include<iostream>
+using namespace std ;
+int main(){
+    cout << "enter the number of elements of array";
+    int n ;
+    cin >> n;
+    int ar[n];
+    cout <<"enter the elements of array";
+    for(int i=0 ; i<n ;i++){
+        cin >> ar[i];
+    }
+    int sum =0;
+    for(int j=0;j<n;j++){
+        sum=sum+ar[j];
+    }
+    cout << " sum of elements of array is :"<< sum << endl ;
+    int avg=sum/n;
+cout <<"average of elements of array is : " << avg ;
+
+}
