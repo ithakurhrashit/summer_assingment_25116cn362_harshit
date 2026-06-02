@@ -1,0 +1,25 @@
+// writre a program for linear serch 
+#include<iostream>
+using namespace std ;
+int main (){
+    int n ,item ,pos=-1;
+    cout <<"enter the number of elements in array ";
+    cin >> n ;
+    int a[n];
+    cout << " enter the  elements of array ";
+    for(int i=1 ;i<n;i++){
+        cin >>a[i];
+    }
+    cout <<"enter the item you want to serch";
+    cin >> item;
+    for(int i=0;i<n;i++){
+        if(item==a[i]){
+            cout << "item found";
+            pos=i+1;
+            cout << pos ;
+        }
+    }
+    if(pos==-1){
+        cout <<"serch unsucesssful";
+    }
+}
