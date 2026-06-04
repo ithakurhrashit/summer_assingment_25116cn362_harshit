@@ -1,0 +1,24 @@
+// write a program to find a missing number in an arrrraay 
+#include<iostream>
+using namespace std;
+int main(){
+    int n ;
+    cout << " enter the elements of array";
+     cin >> n ;
+     int expectedsum ;
+     cout << " enter the expected sum";
+     cin >> expectedsum;
+     int actualsum=0;
+     int a[n];
+     cout << " enter the elements of array";
+     for(int i=0 ;i<n;i++){
+        cin >> a[i];
+     }
+     for(int i=0;i<n;i++){
+        actualsum=actualsum+a[i];
+     }
+     int missingNumber=expectedsum-actualsum;
+     cout << "the missing number is:" << missingNumber;  
+     
+
+} 
