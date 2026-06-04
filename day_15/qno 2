@@ -1,0 +1,23 @@
+//left rotate an aarray 
+#include<iostream>
+using namespace std ;
+int main(){
+    int n ;
+    cout << " enter  the number of elements of an array ";
+    cin >> n ;
+    cout <<"enter the el;ements of an arrray ";
+    int a[n],b[n];
+    for (int i=0;i<n;i++){
+        cin >> a[i];
+    }
+    int k ;
+    cout << " by how many digits you want to rotatew the array";
+    cin >> k;
+    for(int i=0;i<n;i++){
+        b[n+i-k]=a[i];
+    }
+    cout<< "  rotated array is";
+    for(int i=0 ;i<n ;i++){
+        cout << b[i];
+    }
+}
