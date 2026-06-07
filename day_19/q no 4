@@ -1,0 +1,25 @@
+// find the diagonal sum
+#include<iostream>
+using namespace std ;
+int main(){
+    int r,c ;
+    cout << "enter  the rows and colums";
+    int a[r][c];
+    cout << "enter the elements of the array";
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            cin >> a[i][j];
+        }
+    } 
+    int sum =0;
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            if(i==j){
+                sum =sum+a[i][j];
+            }
+        }
+    }
+    cout << "sum of the diagonal elements is : " << sum ;
+    
+
+}
