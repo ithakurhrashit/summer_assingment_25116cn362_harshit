@@ -1,0 +1,40 @@
+// add two matrices 
+#include<iostream>
+using namespace std ;
+int main(){
+ int r1,r2,c1,c2;
+ cout << "enter the rows and colums of first matrix ";
+ cin >> r1 >> c1 ;
+ cout << " enter the rows and colums of second matrix ";
+ cin >> r2 >>c2 ;
+ if(r1!=r2 || c1!=c2){
+    cout << "subtraction is not possible";
+ }   
+ int a[r1][c1], b[r2][c2],subtract[r1][c1];
+ else {
+    cout << "enter the elements of first matrix "; 
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<c1;j++){
+            cin >> a[i][j];
+        }
+    }
+    cout << "enter the lement of second matrix ";
+    for(int i=0;i<r2;i++){
+        for(int j=0;j<c2;j++){
+            cinn >> b[i][j];
+        }
+    }
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<c2;j++){
+            subtract[i][j]=a[i][j]-b[i][j];
+        }
+    }
+    cout << "the diffrence  of the matrix is :";
+    for(int i=0;i<r1;i++){
+        for(int j=0;j<c1;j++){
+            cout << sum[i][j];
+        }
+    }
+}
+}
+
