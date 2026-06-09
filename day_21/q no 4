@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std ;
+inbt main(){
+    string str ;
+    cout << "enter the string ";
+    getline(cin,str);
+    string upper ;
+    for(int i=0;str[i]!=0;i++){
+        if(str[i]>='a' && str[i]<='z'){
+            upper = upper + (str[i]-32);
+        }
+    }
+    cout << "the upper case string is : " << upper << endl ;
+}
