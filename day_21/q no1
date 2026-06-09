@@ -1,0 +1,13 @@
+// find length of string without strlen function 
+#include<iostream>
+using namespace std ;
+int main(){
+    string str ;
+    cout << "enter the string " << endl ;
+    getline(cin,str);
+    int length =0;
+    for(int i=0;str[i]!='\0';i++){
+        length++;
+    }
+    cout << "length of string is " << length << endl ;
+} 
