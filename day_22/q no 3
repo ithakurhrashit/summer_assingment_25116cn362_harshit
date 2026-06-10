@@ -9,8 +9,9 @@ int main(){
     for(int i=0;i<str.length();i++){
         hash[int(str[i])]++;
     }
-    char q;
-    cout << "enter the letter whose frequency you want";
+    cout << " enter  the charecter whose freq you want ";
+    char  q;
     cin >> q;
-    cout << hash[str[int( q )]];
+    cout << "frequency of" << q << " is : " << hash[int(q)];
+    
 }
