@@ -1,0 +1,16 @@
+#include <iostream>
+#include<string>
+using namespace std ;
+
+
+int main() {
+    string text = "Let's remove all the spaces from this sentence.";
+
+    cout << "Original string: " << text << endl;
+
+    text.erase(remove(text.begin(), text.end(), ' '), text.end());
+
+    cout << "Modified string: " << text << endl;
+
+    return 0;
+}
