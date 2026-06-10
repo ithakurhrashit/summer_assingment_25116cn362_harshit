@@ -1,0 +1,16 @@
+// count words in a line 
+#include<iostream>
+using namespace std ;
+int main(){
+    cout << " enter the line ";
+    string str ;
+    getline(cin,str);
+    int count =0;
+    for(int i=0;i<str.length();i++){
+        if(str[i]==0){
+            break;
+        }
+        count ++;
+    }
+    cout << "the number of wrods in string is "<< count ;
+}
