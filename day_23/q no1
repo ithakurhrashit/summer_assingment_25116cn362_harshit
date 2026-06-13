@@ -1,37 +1,26 @@
-#include <iostream>
-#include <string>
-#include <unordered_map>
-
-using namespace std;
-
-char firstNonRepeatingChar(string s) {
-    unordered_map<char, int> charCount;
-
-   
-    for (char c : s) {
-        charCount[c]++;
-    }
-
-  
-    for (char c : s) {
-        if (charCount[c] == 1) {
-            return c;
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std  ;
+int non_repeating_charecter(string s){
+    int n = s.length();
+    unordered_map<char,int> m ;
+    queue<int> q;
+    for(int i=0;i<n;i++){
+        if(m.find(s[i])==m.end()){
+            q.push(i);
+           
+        }
+         m[s[i]]++;
+        while(q.size()>0 && m[s[q.front()]]>1){
+            q.pop();
         }
     }
-
-
-    return '\0'; 
+    return q.empty() ? -1 : q.front();
 }
-
-int main() {
-    string str = "swiss";
-    char result = firstNonRepeatingChar(str);
-
-    if (result != '\0') {
-        cout << "The first non-repeating character is: '" << result << "'" << endl;
-    } else {
-        cout << "There are no non-repeating characters in the string." << endl;
-    }
-
-    return 0;
+int main(){
+    string str;
+    cout << " enter the  string : " << endl ;
+    cin >> str ;
+   cout << "the first non repeating charecter is at index :" <<  non_repeating_charecter(str);
+    
 }
