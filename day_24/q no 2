@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std ;
+
+string compressString(const string& str) {
+    if (str.empty()) return str;
+
+    string compressed = "";
+    int count = 1;
+
+    
+    for (size_t i = 1; i <= str.length(); ++i) {
+        if (i < str.length() && str[i] == str[i - 1]) {
+            count++;
+        } else {
+            
+            compressed += str[i - 1];
+            compressed += std::to_string(count);
+            count = 1;
+        }
+    }
+    return compressed.length() < str.length() ? compressed : str;
+}
+
+int main() {
+    string original = "aabcccccaaa";
+    string result = compressString(original);
+
+    cout << "Original:   " << original << "\n";
+    cout << "Compressed: " << result << "\n\n";
+
+    string edgeCase = "abc";
+    cout << "Original:   " << edgeCase << "\n";
+    cout << "Compressed: " << compressString(edgeCase) << " (kept original because compression was longer)\n";
+
+    return 0;
+}
