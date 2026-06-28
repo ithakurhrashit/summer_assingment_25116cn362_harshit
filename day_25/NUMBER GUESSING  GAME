@@ -7,7 +7,7 @@ int main(){
     cout << " enter your name user : ";
     getline(cin , name );
     cout << "welcome to the game " << name << "\n" ;
-    cout << " welcome to the number guessing game \n you have to guess a random number between 0 to 10 \n you have 10 lives you have to guess between them ";
+    cout << " welcome to the number guessing game \n you have to guess a random number between 0 to 100 \n you have 10 lives you have to guess between them ";
     int randomNum = rand() % 101;
     int n ;
     
