@@ -1,0 +1,40 @@
+// here we will make a number guessing game 
+#include<bits/stdc++.h>
+using namespace std ;
+int main(){
+    srand(time(0));
+    string name ;
+    cout << " enter your name user : ";
+    getline(cin , name );
+    cout << "welcome to the game " << name << "\n" ;
+    cout << " welcome to the number guessing game \n you have to guess a random number between 0 to 100 \n you have 10 lives you have to guess between them ";
+    int randomNum = rand() % 101;
+    int n ;
+    
+    cin >> n ;
+    int i=0;
+    while(i<11){
+        if(n!=randomNum){
+            if(i==10){
+            cout << "lifes exhausted";
+            cout << "revealing the number , the number is : " << randomNum ;
+            break;
+        }
+            cout << "wrong guess try againn : \n lifes remaining = " << 9-i << "\n" ;
+            if(n>randomNum){
+                cout << "number is lower";
+            }
+            else{
+                cout << "number is higher";
+            }
+        cin >> n ;
+        
+        }
+        if(n==randomNum){
+            cout << "right answer you won ";
+            break ;
+        }
+        i++;
+    }
+   
+}
