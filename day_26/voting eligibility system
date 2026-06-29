@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std ;
+int main(){
+    string name ;
+    cout << " enter your name";
+    getline(cin,name);
+    cout << " welcome to the voting eligibility system " << name << "\n";
+    cout << " please enter your age: \n ";
+    int age ;
+    cin >> age ;
+    if(age<18){
+        cout << " grow some beard child, you are a boy become a man to vote  \n ";
+    }
+    while(age>18){
+        if(age>75){
+            cout << " you are a grown ass man motherfucker , OFCOUYRSE YOU CAN VOTE , STUPID as motherfucker";
+            break;
+            
+        }
+        cout << " yeah man you can vote :) ";
+    }
+}
