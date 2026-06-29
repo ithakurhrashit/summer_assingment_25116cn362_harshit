@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std ;
+struct studentmanagement{
+    string name ;
+    int rollno;
+    string fathersname ;
+
+};
+int main(){
+int n ;
+cout << "enter the number of students you have to store the data";
+cin >> n ;
+cout << "\nplease enter the data in alphabeticall order becuase the managemnt system is designed to do so \n";
+for(int i=1;i<=n;i++){
+    studentmanagement student i ;
+    cout << "enter the name of  student\n";
+    cin >> student i.name;
+   student i .rollno =i;
+    cout << "enter fathers name\n";
+    cin >> studenti.fathersname;
+}
+}
