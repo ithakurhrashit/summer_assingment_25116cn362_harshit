@@ -1,0 +1,19 @@
+# prizeMoney=0
+# questions = [
+#     ["who was the first president of india" , "narendra modi" , "rajendra prasad" , "rahul gandhi" ,"harshit signh" , 2],
+#     ["who is the current prime minister of india " , "rahul gandhi" , "narendra modi" , "vedant singh" , "harshit singh " , 2],
+#     ["who has the highest money in india" , "mukesh ambani" , "gautam adani" , "rahul gandhi" , "harshit  singh" , 1],
+#     ["max kisko sbse zyada pyaar krta hai" , "harshit bhaiya" , "golu bhaiya" ,"vedant " , "usha mummy" , 4]
+# ]
+# for question in questions:
+#     print(question[0],"\n" , "\n")
+#     print("your options are" , "\n" , 1,question[1],"\n",2,question[2],"\n",3,question[3],"\n",4,question[4])
+#     print("\n choose the correct option \n")
+#     ans=int(input("enter the option no. : "))
+#     if(ans==question[5]):
+#         print("right answer you have crossed level , you have won 20000 ")
+#         prizeMoney+=20000
+#     else:
+#         print("wrong answer better luck nexyt time")
+
+# print("thanks for playing , you have won : " , prizeMoney , "\n you can withdraw it from code with harshits account")
