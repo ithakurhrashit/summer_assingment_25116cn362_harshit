@@ -1,0 +1,57 @@
+// Creating a ATM stimulation 
+#include<bits/stdc++.h>
+using namespace std ;
+struct {
+        string name;
+        int pin ;
+        int balance ;
+    } atm1 ;
+int main(){
+    cout << "wlcome the the XNXX banking system \n ";
+    cout << "choose from the options below\n 1.withdraw money \n 2.create account \n 3.check balance";
+    int ans1;
+    cin >> ans1;
+    if(ans1==2){
+        cout << " welcome to account creation portal enter your details carefully \n";
+        cout << "enter your name" ;
+        cin >> atm1.name ;
+        cout << "enter your pin ";
+        cin >> atm1.pin;
+        cout << "enter the amount you are submitting in the bank , it will reflect as your balance";
+        cin >> atm1.balance;
+        cout << "choose from the option below \n 1.withdraw yourmoney \n 3.check balance";
+        cin >> ans1;
+    }
+    if(ans1==1){
+        cout << "welcome to the money withdrawing interface";
+        cout << "\n how much money do you want to withdraw : ";
+        int amount;
+        cin >> amount ;
+        cout << "enter your name :";
+        string username;
+        cin >> username;
+        if(username==atm1.name){
+              cout << "user found \n please enter the amount you want to withdraw";
+              int amount;
+              cin >> amount ;
+              cout << "enter the pin";
+              int pin ;
+              cin >> pin ;
+               if(pin==atm1.pin){
+                    cout<< "money withdraw successful";
+                    atm1.balance=atm1.balance-amount;
+                 }
+             else{
+                cout << "the pin you entered was wrong";
+              }
+        }
+
+    }
+    if(ans1==3){
+        cout << "the balance left in your account is : " << atm1.balance ;
+    }
+
+    cout << "thankyou for working with us , have agreqat day  ";
+    
+
+}
